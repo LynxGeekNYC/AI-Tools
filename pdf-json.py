@@ -20,7 +20,7 @@ def extract_text_from_pdf(input_pdf, output_file="output.json"):
             page = doc.load_page(page_num)
             structured_text = page.get_text()
 
-            # If no text is found, perform OCR on the page
+            # If no text is found, perform OCR on the page (hand-written text)
             if not structured_text.strip():
                 print(f"Page {page_num + 1} is scanned. Performing OCR...")
                 ocr_text = perform_ocr_on_page(input_pdf, page_num)

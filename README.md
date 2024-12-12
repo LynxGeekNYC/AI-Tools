@@ -8,6 +8,30 @@ Script that extracts data from PDF files in order to be used for OpenAI / ChatGP
 
 I put a lot of work into these scripts so please donate if you can. Even $1 helps!
 
+# C++ OCR to JSON
+
+Instructions
+
+Install Dependencies:
+
+Install Tesseract and Leptonica: sudo apt install tesseract-ocr libtesseract-dev libleptonica-dev
+Install Poppler: sudo apt install libpoppler-dev
+
+Install nlohmann/json header file via package manager or manually.
+
+Build the Script:
+
+bash
+g++ -o ocr_extractor ocr_extractor.cpp -ltesseract -llept -lpoppler-cpp -std=c++17
+Run the Script:
+
+bash
+./ocr_extractor output.json file1.pdf file2.jpg file3.png
+
+Output:
+
+Extracted data will be saved in output.json.
+
 PayPal: alex@alexandermirvis.com
 
 CashApp / Venmo: LynxGeekNYC

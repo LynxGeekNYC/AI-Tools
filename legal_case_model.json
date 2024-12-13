@@ -1,0 +1,160 @@
+{
+    "caseDetails": {
+        "caseId": "12345",
+        "incidentDate": "2024-12-12",
+        "location": "123 Main Street, NYC",
+        "description": "Multi-vehicle accident involving two sedans and one motorcycle.",
+        "caseType": "Personal Injury",
+        "incidentType": [
+            "Car Accident",
+            "Assault",
+            "Slip and Fall",
+            "Medical Malpractice"
+        ]
+    },
+    "entities": {
+        "witnesses": [
+            {
+                "id": "W1",
+                "name": "John Doe",
+                "contactInfo": {
+                    "phone": "555-123-4567",
+                    "email": "johndoe@example.com"
+                },
+                "statement": "I saw the blue car run the red light.",
+                "relevance": "Key eyewitness to traffic signal violation.",
+                "credibilityFactors": {
+                    "employment": "Teacher",
+                    "criminalHistory": "None",
+                    "education": "Bachelor's Degree",
+                    "relationshipToCase": "Independent Bystander"
+                }
+            }
+        ],
+        "victims": [
+            {
+                "id": "V1",
+                "name": "Jane Smith",
+                "age": 35,
+                "role": "Passenger in Vehicle A",
+                "injuries": {
+                    "severity": "Severe",
+                    "details": [
+                        "Fractured right leg",
+                        "Concussion",
+                        "Multiple lacerations"
+                    ],
+                    "treatment": [
+                        {
+                            "date": "2024-12-12",
+                            "type": "Emergency Room",
+                            "hospital": "NYC General Hospital"
+                        },
+                        {
+                            "date": "2024-12-13",
+                            "type": "Surgery",
+                            "hospital": "NYC General Hospital"
+                        }
+                    ]
+                },
+                "contributionToCase": "Claiming compensation for medical expenses and pain and suffering."
+            }
+        ],
+        "defendants": [
+            {
+                "id": "D1",
+                "name": "Mark Lee",
+                "role": "Driver of Vehicle B",
+                "vehicleInfo": {
+                    "make": "Toyota",
+                    "model": "Camry",
+                    "year": 2018,
+                    "licensePlate": "ABC1234"
+                },
+                "allegations": "Ran a red light, causing the collision.",
+                "defenseClaims": "Traffic signal malfunctioned.",
+                "insuranceDetails": {
+                    "company": "State Farm",
+                    "policyNumber": "SF123456789"
+                }
+            }
+        ],
+        "vehicleOperators": [
+            {
+                "id": "VO1",
+                "name": "Alice Brown",
+                "role": "Driver of Vehicle A",
+                "vehicleInfo": {
+                    "make": "Honda",
+                    "model": "Civic",
+                    "year": 2020,
+                    "licensePlate": "XYZ5678"
+                },
+                "actions": "Was stopped at the intersection.",
+                "involvement": "Claiming no fault; alleges Vehicle B struck them from the side."
+            }
+        ],
+        "passengers": [
+            {
+                "id": "P1",
+                "name": "Jane Smith",
+                "vehicleId": "VehicleA",
+                "relationshipToDriver": "Friend",
+                "injuries": "Severe",
+                "statement": "We were waiting at the light when we got hit."
+            }
+        ],
+        "expertWitnesses": [
+            {
+                "id": "EW1",
+                "name": "Dr. Sarah Carter",
+                "field": "Accident Reconstruction",
+                "credentials": [
+                    "PhD in Mechanical Engineering",
+                    "Certified Accident Reconstructionist"
+                ],
+                "reportSummary": "Analyzed the collision dynamics; concluded Vehicle B was at fault due to excessive speed.",
+                "relevance": "Provides technical insight into the accident's cause."
+            }
+        ],
+        "medicalExperts": [
+            {
+                "id": "ME1",
+                "name": "Dr. Emily White",
+                "specialization": "Orthopedic Surgery",
+                "statement": "Victim Jane Smith's injuries are consistent with a high-impact collision.",
+                "treatmentDetails": "Performed surgery to repair fractured right leg.",
+                "contributionToCase": "Corroborates the severity of injuries sustained."
+            }
+        ],
+        "propertyOwners": [
+            {
+                "id": "PO1",
+                "name": "David Johnson",
+                "role": "Owner of premises where slip and fall occurred.",
+                "allegations": "Failed to address hazardous conditions leading to the accident.",
+                "defenseClaims": "No prior knowledge of the hazardous condition."
+            }
+        ]
+    },
+    "relationships": [
+        {
+            "relationshipType": "Driver-Passenger",
+            "fromEntity": "Alice Brown",
+            "toEntity": "Jane Smith",
+            "description": "Driver and passenger in Vehicle A."
+        },
+        {
+            "relationshipType": "Witness-Incident",
+            "fromEntity": "John Doe",
+            "toEntity": "Multi-vehicle accident",
+            "description": "Eyewitness to the incident."
+        },
+        {
+            "relationshipType": "Expert-Incident",
+            "fromEntity": "Dr. Sarah Carter",
+            "toEntity": "Collision Analysis",
+            "description": "Provided technical expertise on collision cause."
+        }
+    ]
+}

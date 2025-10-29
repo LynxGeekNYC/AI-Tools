@@ -1,4 +1,4 @@
-// legal_ocr_pro.cpp
+// legal_ocr_pro.cpp.cpp
 // End to end pipeline for legal intake: PDF rasterization -> OCR -> deskew -> heuristics ->
 // doc type classification -> compact prompt -> OpenAI function schema -> merge -> outputs.
 // Features:

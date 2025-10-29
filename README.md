@@ -8,6 +8,10 @@ Script that extracts data from PDF files in order to be used for OpenAI / ChatGP
 
 I put a lot of work into these scripts so please donate if you can. Even $1 helps!
 
+# C++ OCR to JSON for Law (/law/ocr/2025)
+C++ Framework for Law Practice that analyzes all data (Transcripts, Medical Records, Police Reportd, etc), efficiently exports all data to a JSON to be able to submit to OpenAI or any other LLM for Analysis, etc.
+This script is designed to be efficient to minimize token usage, rather than uploading entire PDF's, etc. 
+
 # C++ OCR to JSON
 
 Instructions

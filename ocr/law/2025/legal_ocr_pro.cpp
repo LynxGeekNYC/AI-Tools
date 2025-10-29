@@ -1,3 +1,7 @@
+// Framework to convert Legal Documents to JSON Data and Push through OpenAI or any other LLM
+// 
+// 
+// 
 // legal_ocr_pro.cpp.cpp
 // End to end pipeline for legal intake: PDF rasterization -> OCR -> deskew -> heuristics ->
 // doc type classification -> compact prompt -> OpenAI function schema -> merge -> outputs.
